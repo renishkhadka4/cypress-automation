@@ -1,0 +1,21 @@
+{
+    "name": "TestUser",
+    "email": "testuser@example.com",
+    "gender": "Mr",
+    "password": "Test@1234",
+    "dob": {
+      "day": "10",
+      "month": "June",
+      "year": "1995"
+    },
+    "address": {
+      "firstName": "Test",
+      "lastName": "User",
+      "address": "123 Testing Lane",
+      "state": "Bagmati",
+      "city": "Kathmandu",
+      "zipcode": "44600",
+      "mobile": "9812345678"
+    }
+  }
+  
