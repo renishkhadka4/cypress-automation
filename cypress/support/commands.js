@@ -33,3 +33,21 @@ Cypress.Commands.add('login', (email, password) =>{
     cy.get('[data-qa="login-button"]').click();
     
 })
+
+
+// cypress/support/commands.js
+Cypress.Commands.add('loginViaAPI', () => {
+  cy.request({
+    method: 'POST',
+    url: 'https://automationexercise.com/login', // Your login endpoint
+    body: {
+      email: 'renishkhadka0@gmail.com',
+      password: 'renish'
+    }
+  }).then((response) => {
+    const token = response.body.token;
+    window.localStorage.setItem('authToken', token); // or sessionStorage
+  });
+});
+
+

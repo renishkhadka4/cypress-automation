@@ -19,7 +19,6 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Run Registration Test
-        run: npx cypress run --spec "cypress/e2e/Registration/registration.cy.js"
-
+      - name: Run API Test 
+        run: npx cypress run --spec "cypress/e2e/API/api.cy.js"
       
